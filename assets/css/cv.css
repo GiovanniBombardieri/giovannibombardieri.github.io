@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'disket-mono';
-  src: url(/assets/font/Disket_Mono/Disket-Mono-Regular.ttf);
+  src: url(/HTML-CSS-Project/assets/font/Disket_Mono/Disket-Mono-Regular.ttf);
 }
 @font-face {
   font-family: 'League-Spartan';
-  src: url(/assets/font/League_Spartan/League-Spartan.ttf);
+  src: url(/HTML-CSS-Project/assets/font/League_Spartan/League-Spartan.ttf);
 }
 
 * {
