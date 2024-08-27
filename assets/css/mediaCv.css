@@ -1,0 +1,285 @@
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+  /* FONT */
+  h1 {
+    font-family: 'League-Spartan';
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  h3 {
+    font-family: 'League-Spartan';
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* HEADER */
+  .navBar {
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .logo, .triangle {
+    display: none;
+  }
+  
+  .logo2 {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .showTriangle:hover {
+    background-color: #1c1445 ;
+    cursor: pointer;
+  
+     a {
+      color: #1c1445;
+    }
+  
+    .back {
+      background-color: #fff
+    }
+  
+    .triangle {
+      border-right: 20px solid #fff;
+    }
+  }
+
+  /* TITLE */
+  .cvTitle {
+    width: 100%;
+    background-color: #2e274f;
+    padding: 30px;
+
+    border: 1px solid #fff;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fotoProfilo {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 25vw;
+    border-radius: 500px;
+  }
+
+  /* INTRODUCTION */
+  .firstRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* WORK EXPERIENCE */
+  .work-experience {
+    margin-bottom: 30px;
+  }
+
+  .company, .university {
+    font-size: 16px;
+  }
+
+  .job, .master {
+    font-size: 15px;
+  }
+
+  .date {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  /* SCHOOL */
+  .school {
+    margin-top: 0;
+  }
+
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SKILLS */
+  .all-skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .hard-skills {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .skills li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .hs-progress-bar-1, .hs-progress-bar-2, .hs-progress-bar-3, .hs-progress-bar-4, .hs-progress-bar-5 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 20px;
+    width: 90%;
+    border: 2px solid #1c1445;
+    border-radius: 25px;
+    background: #E2DAD6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  span {
+    display: inline-block;
+    height: 12px;
+    width: 5%;
+    background: #57546d;
+    border: 1px solid #57546d;
+    border-radius: 25px;
+  }
+
+  .skills:hover {
+    .hs-progress-bar-1 span {
+      width: 85%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .hs-progress-bar-2 span {
+      width: 80%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .hs-progress-bar-3 span {
+      width: 55%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .hs-progress-bar-4 span {
+      width: 25%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .hs-progress-bar-5 span {
+      width: 50%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+  }
+
+  .ss-progress-bar-1, .ss-progress-bar-2, .ss-progress-bar-3, .ss-progress-bar-4, .ss-progress-bar-5 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 20px;
+    width: 90%;
+    border: 2px solid #1c1445;
+    border-radius: 25px;
+    background: #E2DAD6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .skills:hover {
+    .ss-progress-bar-1 span {
+      width: 80%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .ss-progress-bar-2 span {
+      width: 90%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .ss-progress-bar-3 span {
+      width: 90%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .ss-progress-bar-4 span {
+      width: 80%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+    .ss-progress-bar-5 span {
+      width: 80%;
+      background: #1c1445;
+      transition: all 2s ease-in-out;
+    }
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    margin: 20px 0 50px 0;
+  }
+
+  .footerLogo {
+    margin-bottom: 50px;
+  }
+
+  .logos {
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media only screen and (min-width:769px) and (max-width:1500px) {
+
+  /* TITLE */
+  .cvTitle {
+    padding: 40px;
+  }
+
+  .fotoProfilo {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* WORK EXPERIENCE */
+  .firstRow {
+    display: flex;
+    align-items: center;
+  }
+
+  /* SCHOOL */
+  .secondRow {
+    width: 95%;
+  }
+
+  /* SKILLS */
+  .all-skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .hard-skills {
+    margin-right: 0;
+  }
+
+}

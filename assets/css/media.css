@@ -1,0 +1,210 @@
+/* SMARTPHONE */
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+  h1 {
+    font-size: 60px;
+  }
+
+  /* HEADER */
+  .navBar {
+    text-align: center;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .navButtons ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .logo2 {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* HOME PAGE */
+  .homePage {
+    padding-top: 240px;
+  }
+  
+  .anchorHomePage {
+    display: none;
+  }
+
+  .homePageText {
+    position: static;
+    width: 80%;
+  }
+
+  .homePageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fotoLavoro {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* ABOUT ME */
+  .aboutMe {
+    padding-top: 240px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firstBox, .secondBox, .thirdBox {
+    width: 90%;
+    height: 450px;
+    margin-bottom: 5px;
+  }
+
+  .box img {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 240px;
+  }
+
+  .portfolioTitle {
+    margin-bottom: 30px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work1, .work2 {
+    margin-bottom: 10px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding-top: 240px;
+  }
+
+  .form {
+    align-items: center;
+    width: 100%;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name input {
+    width: 270px;
+  }
+
+  .surname {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .mail input {
+    width: 270px;
+  }
+
+  textarea {
+    width: 270px;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    margin: 20px 0 50px 0;
+  }
+
+  .footerLogo {
+    margin-bottom: 50px;
+  }
+
+  .logos {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1500px) {
+
+  h1 {
+    font-size: 80px;
+  }
+
+  /* HEADER */
+  .navBar {
+    padding: 20px;
+  }
+  .logo {
+    min-width: 200px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+
+  /* HOME PAGE */
+  .fotoLavoro {
+    width: 350px;
+    height: 350px;
+  }
+
+  .homePageText {
+    width: 350px;
+    position: relative;
+    top: 100px;
+  }
+
+  /* ABOUT ME */
+  .firstBox, .secondBox, .thirdBox {
+    height: 500px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .work1, .work2, .work3 {
+    padding: 50px 10px 0 10px;
+  }
+
+  /* CONTACT */
+  .form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,429 @@
+@font-face {
+  font-family: 'disket-mono';
+  src: url(/assets/font/Disket_Mono/Disket-Mono-Regular.ttf);
+}
+@font-face {
+  font-family: 'League-Spartan';
+  src: url(/assets/font/League_Spartan/League-Spartan.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* DEFINIZIONE DI FONT PER TESTO E TITOLI */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'League-Spartan';
+  font-size: 80px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 28px;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'League-Spartan';
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* HEADER */
+header {
+  background-color: #1c1445;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+.navBar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.logo {
+  max-width: 40%;
+  min-width: 40%;
+}
+
+.logo2 {
+  display: none;
+}
+
+.navButtons ul {
+  list-style: none;
+  width: 100%;
+  font-family: 'Disket-Mono';
+  font-size: 12px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.back {
+  width: 100px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.showTriangle:hover {
+  background-color: #1c1445 ;
+  cursor: pointer;
+
+   a {
+    color: #1c1445;
+  }
+
+  .back {
+    background-color: #fff
+  }
+
+  .triangle {
+    border-right: 20px solid #fff;
+  }
+}
+
+/* FULL CONTENITOR */
+
+.fullContenitor {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid #1c1445;
+  border-radius: 20px;
+}
+
+/* TITLE */
+
+.fotoProfilo {
+  width: 18vw;
+  border-radius: 500px;
+  margin: 30px 0 30px 100px;
+}
+
+.cvTitle {
+  width: 100%;
+  background-color: #2e274f;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  margin-bottom: 30px;
+
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.cvTitle div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* INTRODUCTION */
+
+.firstRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.introduction {
+  width: 50%;
+  margin: 0px 20px 0 50px;
+  text-align: justify;
+}
+
+/* WORK EXPERIENCE */
+.work-experience {
+  width: 50%;
+  text-align: center;
+}
+
+.work-experience-ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.work-experience-ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.company {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.job {
+  font-style: italic;
+}
+
+.date {
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+/* SCHOOL */
+.school {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.secondRow {
+  width: 80%;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.university {
+  font-size: 20px;
+  font-weight: 600;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.master {
+  font-size: 18px;
+  font-style: italic;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+/* SKILLS */
+.all-skills {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.hard-skills {
+  margin-right: 300px;
+}
+
+.skills h3 {
+  margin-bottom: 30px;
+}
+
+.skills li {
+  list-style: none;
+  text-align: center;
+}
+
+.hs-progress-bar-1, .hs-progress-bar-2, .hs-progress-bar-3, .hs-progress-bar-4, .hs-progress-bar-5 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 20px;
+  width: 350px;
+  border: 2px solid #1c1445;
+  border-radius: 25px;
+  background: #E2DAD6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  display: inline-block;
+  height: 12px;
+  width: 5%;
+  background: #57546d;
+  border: 1px solid #57546d;
+  border-radius: 25px;
+}
+
+.ss-progress-bar-1, .ss-progress-bar-2, .ss-progress-bar-3, .ss-progress-bar-4, .ss-progress-bar-5 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 20px;
+  width: 350px;
+  border: 2px solid #1c1445;
+  border-radius: 25px;
+  background: #E2DAD6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.skills:hover {
+  .hs-progress-bar-1 span {
+    width: 85%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .hs-progress-bar-2 span {
+    width: 80%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .hs-progress-bar-3 span {
+    width: 55%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .hs-progress-bar-4 span {
+    width: 25%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .hs-progress-bar-5 span {
+    width: 50%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+}
+
+.skills:hover {
+  .ss-progress-bar-1 span {
+    width: 80%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .ss-progress-bar-2 span {
+    width: 90%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .ss-progress-bar-3 span {
+    width: 90%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .ss-progress-bar-4 span {
+    width: 80%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+  .ss-progress-bar-5 span {
+    width: 80%;
+    background: #1c1445;
+    transition: all 2s ease-in-out;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  height: 200px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  min-width: 33.3%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul {
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+.links li {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+}
+.links a {
+  color: #000;
+  text-decoration: none;
+}
+.links li:hover {
+  a {
+    color: #fff;
+    background-color: #1c1445;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.footerLogo {
+  min-width: 33.3%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footerLogo img {
+  width: 200px;
+  height: 69px;
+  margin-top: 15px;
+}
+
+.social {
+  min-width: 33.3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos img {
+  width: 32px;
+  height: 28px;
+}

@@ -1,0 +1,388 @@
+@font-face {
+  font-family: 'disket-mono';
+  src: url(/assets/font/Disket_Mono/Disket-Mono-Regular.ttf);
+}
+@font-face {
+  font-family: 'League-Spartan';
+  src: url(/assets/font/League_Spartan/League-Spartan.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'League-Spartan';
+  font-size: 80px;
+  text-shadow: -10px -10px #00000008;
+}
+
+/* Personalizzazione elemento HEADER */
+header {
+  background-color: #1c1445;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+.navBar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.logo {
+  max-width: 40%;
+  min-width: 40%;
+}
+
+.logo2 {
+  display: none;
+}
+
+.navButtons ul {
+  list-style: none;
+  width: 100%;
+  font-family: 'Disket-Mono';
+  font-size: 12px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navButtons li {
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navButtons li:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  a {
+    color: #1c1445;
+  }
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* HOMEPAGE */
+
+.homePage {
+  background-color: #FFF;
+  text-align: center;
+  padding: 180px 0 180px 0;
+}
+
+.homePageContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fotoLavoro {
+  width: 420px;
+  height: 420px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.homePageText {
+  width: 450px;
+  height: auto;
+  border-radius: 5px;
+  padding: 50px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+
+  color: #000;
+  background-color: #edd9b1;
+
+  position: relative;
+  right: 30px;
+  bottom: 20px;
+}
+
+.homePageContent ul {
+  font-size: 28px;
+  text-align: center;
+}
+.homePageContent li {
+  font-size: 15px;
+  text-align: center;
+  list-style-position: inside;
+}
+.homePageContent p {
+  margin: 15px 0 15px 0;
+}
+
+
+/* ABOUT */
+
+.aboutMe {
+  text-align: center;
+  height: auto;
+  padding: 180px 0 100px 0;
+  background-color: #edd9b1;
+}
+
+.box {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.firstBox, .secondBox, .thirdBox {
+  width: 30%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstBox img, .secondBox img, .thirdBox img {
+  margin-top: 30px;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 300px;
+}
+
+.firstBox p, .secondBox p, .thirdBox p {
+  margin: 30px 35px 0 35px;
+  height: 150px;
+  width: 80%;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+height: auto;
+padding: 180px 0 180px 0;
+margin: 0 50px 0 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolioTitle {
+  line-height: 1.2;
+}
+
+.works {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.work1 img, .work2 img, .work3 img {
+  width: 230px;
+  height: 230px;
+  border-radius: 5px;
+
+}
+
+.works img:hover {
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+  padding: 180px 0 50px 0;
+  background-color: #2e274f;
+  color: #FFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h1 {
+  text-shadow: -10px -10px #ffffff09;
+}
+
+.form {
+  width: 50%;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mail input {
+  width: 410px;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.input   {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+  padding: 5px;
+}
+
+.surname {
+  margin-left: 10px;
+}
+
+.message {
+  margin: 0 auto;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 410px;
+  height: 150px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+  padding: 5px;
+
+  margin-bottom: 20px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #fff;
+  color: #1c1445;
+}
+
+button:hover {
+  background-color: #1c1445;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer {
+  height: 200px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  min-width: 33.3%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul {
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+.links li {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+}
+.links a {
+  color: #000;
+  text-decoration: none;
+}
+.links li:hover {
+  a {
+    color: #fff;
+    background-color: #1c1445;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.footerLogo {
+  min-width: 33.3%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footerLogo img {
+  width: 200px;
+  height: 69px;
+  margin-top: 15px;
+}
+
+.social {
+  min-width: 33.3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos img {
+  width: 32px;
+  height: 28px;
+}
