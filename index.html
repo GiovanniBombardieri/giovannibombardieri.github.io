@@ -4,8 +4,210 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giovanni Bombardieri</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/ico"
+    />
+    <link rel="stylesheet" href="assets/css/stylescroll.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "AZ3GGZk98GOI6qF0v",
+            });
+        })();
+    </script>
+
   </head>
+
   <body>
-    <h1>Ora sono sul branch dev</h1>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navBar">
+
+        <div><a href="#homePage"><img class="logo" src="/assets/img/nuovoLogo.png" alt="logo dello sviluppatore"/></a></div>
+        <div><a href="#homePage"><img class="logo2" src="assets/img/logoOrizBianco.png" alt="logo in orizzontale"></a></div>
+        
+        <div class="navButtons">
+          <ul>
+            <li><a href="#aboutMe">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li style="border: 1px solid #fff">
+              <a href="curriculumVitae/curriculum.html">Curriculum Vitae</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div class="homePage" id="homePage">
+      <h1>Hey, I'm GIOVANNI</h1>
+      <p style="font-family: 'Disket-Mono'">And this is my personal website</p>
+      
+      <div class="homePageContent">
+        <img src="assets/img/working-photo.webp" alt="foto uomo che lavora al computer" class="fotoLavoro" />
+        
+        <div class="homePageText">
+          <p>
+            I am passionate about <strong>technology</strong> and I have
+            recently started my journey in the world of
+            <strong>web development</strong>.
+          </p>
+          <ul>
+            Here you can find:
+            <li>Hobbies</li>
+            <li>Works</li>
+            <li>Social contact</li>
+          </ul>
+          <p><em>I promise to keep it update!</em></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="aboutMe" id="aboutMe">
+      <h1>About Me</h1>
+      <div class="box">
+        <div class="firstBox">
+          <img src="assets/img/foto-giordania.jpeg" alt="uomo in piedi nella sabbia"/>
+          <p>
+            I have various passions in my life, but two of the most important
+            are <strong>sports</strong> and <strong>travel</strong>.
+            <br /><br />
+            I have been practicing sports since I started walking; and I have
+            been traveling since I decided to open myself up to the world and
+            the adventures it can offer you.
+          </p>
+        </div>
+
+        <div class="secondBox">
+          <img src="assets/img/foto-kimono.jpeg" alt="uomo e donna in kimono su futon" />
+          <p>
+            I strongly believe that in both of these areas,
+            <strong>meeting people</strong> of all kinds can make you learn a
+            lot about the world and yourself. <br /><br />
+            Thanks to them, as well as to the work carried out, I developed soft
+            skills such as <em>teamwork, empathy and communication</em>.
+          </p>
+        </div>
+
+        <div class="thirdBox">
+          <img src="assets/img/foto-giappone.jpeg" alt="uomo in piedi davanti portale giapponese" />
+          <p>
+            I'm always looking for <strong>new challenges</strong>; <br /><br />
+            I love the feeling of putting yourself to the test, facing a
+            difficulty and <em>looking for solutions to solve it.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <div class="portfolioTitle">
+        <h1>Portfolio</h1>
+        <p>
+          Here is where you can find the works that I upload during my study
+        </p>
+      </div>
+      <div class="works">
+        <div class="work1">
+          <img src="assets/img/portfolio1.jpg" alt="" />
+        </div>
+
+        <div class="work2">
+          <img src="assets/img/portfolio2.jpg" alt="" />
+        </div>
+
+        <div class="work3">
+          <img src="assets/img/portfolio3.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="form">
+        <!-- Name -->
+        <div class="name">
+          <input
+            class="input"
+            type="text"
+            id="name"
+            placeholder="Mario"
+            required
+          />
+          <input
+            class="input surname"
+            type="text"
+            id="surname"
+            placeholder="Rossi"
+            required
+          />
+        </div>
+        <!-- Email-->
+        <div class="mail">
+          <input
+            class="input"
+            type="email"
+            id="email_id"
+            placeholder="email@example.com"
+            required
+          />
+        </div>
+        <!-- Message -->
+        <div class="message">
+          <textarea
+            id="message"
+            placeholder="Write here your message..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Button SEND -->
+        <div class="send">
+          <button type="submit" id="sendButton" onclick="sendMail()">SEND</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+
+        <div class="links">
+          <ul>
+            Links:
+            <li><a href="#homePage">Homepage</a></li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footerLogo">
+          <p>Designed By:</p>
+          <a href="#homePage"><img src="assets/img/logoFooter.png" alt="Logo orizzontale di Giovanni Bombardieri" /></a>
+        </div>
+
+        <div class="social">
+          <div class="logos">
+            <a href="https://www.linkedin.com/in/giovanni-bombardieri-13ba7021b"><img src="assets/img/linkedinLogo.png" alt="logo di LinkedIn" class="linkedinLogo"></a>
+            <a href="https://github.com/GiovanniBombardieri"><img src="assets/img/github-mark.png" alt="logo di GitHub" class="githubLogo"></a>
+            <a href="https://x.com"><img src="assets/img/xLogo.png" alt="Logo di X"></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>
